@@ -69,13 +69,19 @@
         var handleClasses = function(){
             if(sf.scroll > sf.props.start && sf.scroll < sf.props.end){
                 //console.log('sticky', sf.scroll);
+                /*if(!sf.wrapper.hasClass('stuck')){
+                  sf.css({'position':'relative', 'bottom':0 - sf.outerHeight() * 2, 'height': sf.outerHeight()}).animate({'bottom':0}, 4000, function(){
+                    sf.wrapper.addClass('stuck');
+                  });
+                }*/
                 sf.wrapper.addClass('stuck');
                 $('body').trigger('sFix.stuck');
             }else{
                 //console.log('un-sticky', sf.scroll);
                 if(sf.wrapper.hasClass('stuck')){
-                    sf.wrapper.removeClass('stuck');
-                    $('body').trigger('sFix.unstuck');
+                  /*sf.attr('style', '');*/
+                  sf.wrapper.removeClass('stuck');
+                  $('body').trigger('sFix.unstuck');
                 }
             }
         }
@@ -97,23 +103,3 @@
     }
 
 })(jQuery);
-
-$(document).ready(function(){
-    //todo: allow the plugin to be passed a numeric value, jQuery object or selector
-    //todo: if plugin not passsed a number then allow a position to be passed i.e. top/bottom/percentage/pixels
-    var startVal = $('#starter').offset().top + $('#starter').outerHeight(),
-        endVal = $('#ender').offset().top;
-
-    //console.log(startVal, endVal);
-
-    //Pulgin callback
-    $('.sticky').sFix({start:startVal, end:endVal});
-
-    //
-    $('body').on('sFix.stuck sFix.unstuck', function(e){
-
-        //console.log('Sticky fix fired event', e.type + '.' + e.namespace);
-
-    });
-
-});
