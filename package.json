@@ -1,0 +1,39 @@
+{
+    "name": "jquery.sFix",
+    "version": "1.0.0b1",
+    "title": "jQuery.sFix()",
+    "author": {
+        "name": "Nick Aspinall",
+        "url": "https://github.com/nijk"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "MIT-LICENSE.txt"
+        },
+        {
+            "type": "GPLv2",
+            "url": "GPL-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.4.3"
+    },
+    "description": "A plugin allowing developers to easily stick a DOM element on scroll",
+    "keywords": [
+        "sticky",
+        "fixed",
+        "plugin",
+    ],
+    "homepage": "https://github.com/nijk/sFix",
+    "maintainers": [
+        {
+            "name": "Nick Aspinall",
+            "url": "https://github.com/nijk"
+        }
+    ],
+    "files": [
+        "jquery.sFix.js",
+        "jquery.sFix.min.js"
+    ]
+}
