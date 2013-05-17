@@ -3,14 +3,12 @@ Make DOM elements sticky as you scroll. ([See Demo](http://nijk.github.com/jQuer
 ## Usage
 
 ###HTML
-<pre><div class="container">
-  div id="starter">
-      <h2>Scroll me down...</h2>
-  </div>
-  <div class="sticky">
-      <p>Sticky item</p>
-  </div>
-  <div id="ender"></div>
+<pre>&lt;div class="container">
+  &lt;div id="starter">&lt;/div>
+  &lt;div class="sticky">
+      &lt;p>Sticky item</p>
+  &lt;/div>
+  &lt;div id="ender"></div>
 </pre>
 
 ###CSS
