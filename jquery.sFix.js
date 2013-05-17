@@ -24,7 +24,7 @@
             addScrollListener();
         }
 
-        /**    *
+        /**
          * Public methods
          */
          /*sf.destroy = function(){
