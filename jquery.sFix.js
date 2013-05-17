@@ -50,7 +50,7 @@
         }
 
         var setScrollVal = function(){
-            sf.scroll = $('body').scrollTop();
+            sf.scroll = $(document).scrollTop();
         }
 
         var resizeListener = function(){
