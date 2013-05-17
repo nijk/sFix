@@ -6,7 +6,7 @@ Make DOM elements sticky as you scroll. ([See Demo](http://nijk.github.com/jQuer
 <pre>&lt;div class="container">
   &lt;div id="starter">&lt;/div>
   &lt;div class="sticky">
-      &lt;p>Sticky item</p>
+      &lt;p>Sticky item&lt;/p>
   &lt;/div>
   &lt;div id="ender"></div>
 &lt;/div>
