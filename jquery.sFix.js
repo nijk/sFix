@@ -50,7 +50,7 @@
         }
 
         var setScrollVal = function(){
-            sf.scroll = $('body').scrollTop();
+            sf.scroll = $(document).scrollTop();
         }
 
         var resizeListener = function(){
@@ -97,23 +97,3 @@
     }
 
 })(jQuery);
-
-$(document).ready(function(){
-    //todo: allow the plugin to be passed a numeric value, jQuery object or selector
-    //todo: if plugin not passsed a number then allow a position to be passed i.e. top/bottom/percentage/pixels
-    var startVal = $('#starter').offset().top + $('#starter').outerHeight(),
-        endVal = $('#ender').offset().top;
-
-    //console.log(startVal, endVal);
-
-    //Pulgin callback
-    $('.sticky').sFix({start:startVal, end:endVal});
-
-    //
-    $('body').on('sFix.stuck sFix.unstuck', function(e){
-
-        //console.log('Sticky fix fired event', e.type + '.' + e.namespace);
-
-    });
-
-});
