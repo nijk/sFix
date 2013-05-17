@@ -9,6 +9,7 @@ Make DOM elements sticky as you scroll. ([See Demo](http://nijk.github.com/jQuer
       &lt;p>Sticky item</p>
   &lt;/div>
   &lt;div id="ender"></div>
+&lt;/div>
 </pre>
 
 ###CSS
