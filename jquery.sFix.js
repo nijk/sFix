@@ -57,8 +57,6 @@
     var resizeListener = function (){
       //todo: this needs to accept debounced listeners if they exist
       $(window).on(sf.props.resizeEvent, function (){
-        console.log('I have resized');
-
         setVpHVal();
         setStartEndVals();
         //setScrollVal();
@@ -72,7 +70,6 @@
         sf.wrapper.addClass('stuck');
         $('body').trigger('sFix.stuck');
       }else{
-        //console.log('un-sticky', sf.scroll);
         if(sf.wrapper.hasClass('stuck')){
           sf.wrapper.removeClass('stuck');
           $('body').trigger('sFix.unstuck');
@@ -81,9 +78,6 @@
     }
 
     var addScrollListener = function (){
-
-      //console.log('attaching listener: scroll.sFix');
-
       $(window).on('scroll.sFix', function (){
         setScrollVal();
         handleClasses();
